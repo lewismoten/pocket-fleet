@@ -1,0 +1,644 @@
+{
+  "entries": [
+    {
+      "index": 0,
+      "role": "transparent",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 1,
+      "role": "clothes_base",
+      "rgb": [
+        54,
+        127,
+        189
+      ],
+      "hex": "#367fbd"
+    },
+    {
+      "index": 2,
+      "role": "clothes_shadow",
+      "rgb": [
+        35,
+        81,
+        125
+      ],
+      "hex": "#23517d"
+    },
+    {
+      "index": 3,
+      "role": "clothes_highlight",
+      "rgb": [
+        105,
+        166,
+        210
+      ],
+      "hex": "#69a6d2"
+    },
+    {
+      "index": 4,
+      "role": "trim_base",
+      "rgb": [
+        53,
+        75,
+        101
+      ],
+      "hex": "#354b65"
+    },
+    {
+      "index": 5,
+      "role": "trim_shadow",
+      "rgb": [
+        29,
+        48,
+        71
+      ],
+      "hex": "#1d3047"
+    },
+    {
+      "index": 6,
+      "role": "trim_highlight",
+      "rgb": [
+        97,
+        120,
+        148
+      ],
+      "hex": "#617894"
+    },
+    {
+      "index": 7,
+      "role": "iris",
+      "rgb": [
+        66,
+        153,
+        207
+      ],
+      "hex": "#4299cf"
+    },
+    {
+      "index": 8,
+      "role": "iris_shadow",
+      "rgb": [
+        37,
+        99,
+        134
+      ],
+      "hex": "#256386"
+    },
+    {
+      "index": 9,
+      "role": "pupil",
+      "rgb": [
+        16,
+        20,
+        29
+      ],
+      "hex": "#10141d"
+    },
+    {
+      "index": 10,
+      "role": "eye_white",
+      "rgb": [
+        232,
+        227,
+        210
+      ],
+      "hex": "#e8e3d2"
+    },
+    {
+      "index": 11,
+      "role": "hair_base",
+      "rgb": [
+        118,
+        71,
+        46
+      ],
+      "hex": "#76472e"
+    },
+    {
+      "index": 12,
+      "role": "hair_shadow",
+      "rgb": [
+        69,
+        42,
+        34
+      ],
+      "hex": "#452a22"
+    },
+    {
+      "index": 13,
+      "role": "hair_highlight",
+      "rgb": [
+        174,
+        118,
+        70
+      ],
+      "hex": "#ae7646"
+    },
+    {
+      "index": 14,
+      "role": "skin_base",
+      "rgb": [
+        239,
+        181,
+        126
+      ],
+      "hex": "#efb57e"
+    },
+    {
+      "index": 15,
+      "role": "skin_shadow",
+      "rgb": [
+        187,
+        128,
+        89
+      ],
+      "hex": "#bb8059"
+    },
+    {
+      "index": 16,
+      "role": "skin_highlight",
+      "rgb": [
+        255,
+        212,
+        163
+      ],
+      "hex": "#ffd4a3"
+    },
+    {
+      "index": 17,
+      "role": "blush",
+      "rgb": [
+        231,
+        137,
+        142
+      ],
+      "hex": "#e7898e"
+    },
+    {
+      "index": 18,
+      "role": "lipstick",
+      "rgb": [
+        181,
+        73,
+        102
+      ],
+      "hex": "#b54966"
+    },
+    {
+      "index": 19,
+      "role": "eye_shadow",
+      "rgb": [
+        137,
+        100,
+        166
+      ],
+      "hex": "#8964a6"
+    },
+    {
+      "index": 20,
+      "role": "outline",
+      "rgb": [
+        16,
+        27,
+        40
+      ],
+      "hex": "#101b28"
+    },
+    {
+      "index": 21,
+      "role": "white_highlight",
+      "rgb": [
+        240,
+        245,
+        245
+      ],
+      "hex": "#f0f5f5"
+    },
+    {
+      "index": 22,
+      "role": "helmet_base",
+      "rgb": [
+        193,
+        203,
+        208
+      ],
+      "hex": "#c1cbd0"
+    },
+    {
+      "index": 23,
+      "role": "helmet_shadow",
+      "rgb": [
+        127,
+        145,
+        157
+      ],
+      "hex": "#7f919d"
+    },
+    {
+      "index": 24,
+      "role": "visor",
+      "rgb": [
+        18,
+        52,
+        71
+      ],
+      "hex": "#123447"
+    },
+    {
+      "index": 25,
+      "role": "mouth_interior",
+      "rgb": [
+        41,
+        23,
+        36
+      ],
+      "hex": "#291724"
+    },
+    {
+      "index": 26,
+      "role": "tongue",
+      "rgb": [
+        216,
+        129,
+        121
+      ],
+      "hex": "#d88179"
+    },
+    {
+      "index": 27,
+      "role": "led",
+      "rgb": [
+        32,
+        199,
+        220
+      ],
+      "hex": "#20c7dc"
+    },
+    {
+      "index": 28,
+      "role": "badge",
+      "rgb": [
+        230,
+        174,
+        72
+      ],
+      "hex": "#e6ae48"
+    },
+    {
+      "index": 29,
+      "role": "nose",
+      "rgb": [
+        50,
+        32,
+        28
+      ],
+      "hex": "#32201c"
+    },
+    {
+      "index": 30,
+      "role": "inner_ear",
+      "rgb": [
+        255,
+        158,
+        172
+      ],
+      "hex": "#ff9eac"
+    },
+    {
+      "index": 31,
+      "role": "fur_base",
+      "rgb": [
+        237,
+        150,
+        47
+      ],
+      "hex": "#ed962f"
+    },
+    {
+      "index": 32,
+      "role": "fur_shadow",
+      "rgb": [
+        167,
+        93,
+        32
+      ],
+      "hex": "#a75d20"
+    },
+    {
+      "index": 33,
+      "role": "fur_highlight",
+      "rgb": [
+        255,
+        196,
+        115
+      ],
+      "hex": "#ffc473"
+    },
+    {
+      "index": 34,
+      "role": "fur_cream",
+      "rgb": [
+        255,
+        240,
+        200
+      ],
+      "hex": "#fff0c8"
+    },
+    {
+      "index": 35,
+      "role": "fur_cream_shadow",
+      "rgb": [
+        215,
+        187,
+        139
+      ],
+      "hex": "#d7bb8b"
+    },
+    {
+      "index": 36,
+      "role": "reserved_36",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 37,
+      "role": "reserved_37",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 38,
+      "role": "reserved_38",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 39,
+      "role": "reserved_39",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 40,
+      "role": "reserved_40",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 41,
+      "role": "reserved_41",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 42,
+      "role": "reserved_42",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 43,
+      "role": "reserved_43",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 44,
+      "role": "reserved_44",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 45,
+      "role": "reserved_45",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 46,
+      "role": "reserved_46",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 47,
+      "role": "reserved_47",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 48,
+      "role": "reserved_48",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 49,
+      "role": "reserved_49",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 50,
+      "role": "reserved_50",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 51,
+      "role": "reserved_51",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 52,
+      "role": "reserved_52",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 53,
+      "role": "reserved_53",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 54,
+      "role": "reserved_54",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 55,
+      "role": "reserved_55",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 56,
+      "role": "reserved_56",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 57,
+      "role": "reserved_57",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 58,
+      "role": "reserved_58",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 59,
+      "role": "reserved_59",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 60,
+      "role": "reserved_60",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 61,
+      "role": "reserved_61",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 62,
+      "role": "reserved_62",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    },
+    {
+      "index": 63,
+      "role": "reserved_63",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "hex": "#000000"
+    }
+  ]
+}

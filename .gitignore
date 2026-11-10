@@ -1,0 +1,5 @@
+firmware/include/secrets.h
+.pio/
+node_modules/
+.data/
+.DS_Store

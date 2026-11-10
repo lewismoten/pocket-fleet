@@ -1,0 +1,18 @@
+{
+  "version": 5,
+  "characters": 6,
+  "indexed_pngs": 876,
+  "one_palette_for_all_indexed_pngs": true,
+  "shared_rgb565_palette_bytes": 128,
+  "expression_states_per_character": 12,
+  "pixels_changed_outside_facial_windows": 0,
+  "silhouettes_identical": true,
+  "cropped_facial_offsets_constant": true,
+  "neutral_overlay_reconstruction_exact": true,
+  "raw_buffers_match_pngs": true,
+  "decoded_gif_matches_sources_pixel_for_pixel": true,
+  "talking_changes_only_mouth_region": true,
+  "corgi_upper_muzzle_preserved": true,
+  "alien_scalp_has_no_hair_indexes": true,
+  "physical_CYD_tested": false
+}

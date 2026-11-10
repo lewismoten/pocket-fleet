@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1522">
+  <title>Flash a device · Pocket Fleet</title>
+  <link rel="icon" href="favicon.svg">
+  <style>
+    :root{color-scheme:dark;font-family:system-ui,sans-serif;background:#081723;color:#e5f3f1}
+    body{margin:0;min-height:100vh;background:radial-gradient(circle at 80% 10%,#16414b,#081723 50%)}
+    main{max-width:700px;margin:0 auto;padding:42px 22px 80px}
+    a{color:#93e5d9}h1{font-size:clamp(2rem,6vw,3.4rem);margin:.45em 0}p,li{line-height:1.55}
+    .eyebrow{color:#8bd2ca;font-size:.75rem;letter-spacing:.18em;font-weight:800}
+    .panel{background:#0e2935;border:1px solid #32626b;border-radius:18px;padding:24px;margin:24px 0}
+    .steps{padding-left:22px}.steps li{margin:10px 0}
+    esp-web-install-button{--esp-tools-button-color:#2d8f82;--esp-tools-button-text-color:white;--esp-tools-button-border-radius:10px;display:block;margin:22px 0}
+    button{background:#2d8f82;color:white;border:0;border-radius:10px;padding:12px 18px;font:700 1rem system-ui;cursor:pointer}
+    .hint{color:#a9c6cb;font-size:.94rem}.status{color:#bce8de;font-weight:700}
+    .specs{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px 18px;margin:18px 0 22px}
+    .specs div{border-top:1px solid #32626b;padding-top:8px}
+    .specs dt{color:#8bd2ca;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .specs dd{margin:4px 0 0;line-height:1.4}
+    .accessory{margin:20px 0;padding:14px 16px;border:1px solid #467985;border-radius:12px;background:#153440}
+    .accessory h3{margin:0 0 8px;font-size:1rem}
+    .accessory p{margin:8px 0}
+    code{background:#163947;border-radius:4px;padding:2px 5px}
+  </style>
+  <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+</head>
+<body>
+  <main>
+    <a href="index.html">← Pocket Fleet</a>
+    <div class="eyebrow">USB INSTALLER</div>
+    <h1>Put Pocket Fleet on your device</h1>
+    <p>Choose the board model printed on the back. CYD firmware: <strong>0.1.7</strong>. Cardputer ADV firmware: <strong>0.1.0</strong>.</p>
+    <section class="panel">
+      <div class="eyebrow">M5 CARDPUTER ADV · ESP32-S3</div>
+      <p>A compact keyboard bridge for the Cardputer ADV. Your quarters open first; Wi-Fi is optional for solo play.</p>
+      <dl class="specs">
+        <div><dt>Processor &amp; memory</dt><dd>ESP32-S3FN8, 8 MB flash, 512 KB on-chip SRAM. This build does not use PSRAM.</dd></div>
+        <div><dt>Display</dt><dd>1.14-inch IPS LCD, ST7789V2, 240 × 135 pixels. No touchscreen.</dd></div>
+        <div><dt>Controls &amp; sensing</dt><dd>56-key keyboard, BMI270 6-axis motion sensor, infrared emitter, and battery sensing.</dd></div>
+        <div><dt>Connections &amp; extras</dt><dd>2.4 GHz Wi-Fi, Bluetooth LE, USB-C, microSD slot, microphone, speaker, 3.5 mm audio jack, 1750 mAh battery, and expansion bus.</dd></div>
+      </dl>
+      <p class="hint">Pocket Fleet currently uses the display, keyboard, onboard flash, and Wi-Fi. <a href="https://docs.m5stack.com/en/core/Cardputer-Adv">M5Stack Cardputer ADV specifications</a></p>
+      <div class="accessory">
+        <h3>Optional Cap LoRa-1262</h3>
+        <p>Your Cardputer ADV can carry this cap. It adds an SX1262 LoRa radio (868–923 MHz) through SPI and a GNSS receiver through UART. It has its own external LoRa antenna and built-in GNSS antenna.</p>
+        <p class="hint">The current Pocket Fleet image uses Wi-Fi for fleet play; LoRa and GNSS support are not implemented yet. The cap has no separate Pocket Fleet installer. Attach the LoRa antenna before powering the cap. <a href="https://docs.m5stack.com/en/cap/Cap_LoRa-1262">M5Stack Cap LoRa-1262 specifications</a></p>
+      </div>
+      <ol class="steps">
+        <li>Connect the Cardputer ADV by USB-C to this computer.</li>
+        <li>If it does not enter flashing mode, turn its side switch OFF, hold G0 while connecting USB-C, then release G0.</li>
+        <li>In desktop Chrome or Edge, select the Cardputer serial port below.</li>
+      </ol>
+      <esp-web-install-button manifest="web-flash/manifest-cardputer-adv.json">
+        <button slot="activate" type="button">Install on M5 Cardputer ADV</button>
+        <span slot="unsupported">Use a desktop browser with Web Serial, such as Chrome or Edge.</span>
+        <span slot="not-allowed">Open this page on localhost or HTTPS to enable USB flashing.</span>
+      </esp-web-install-button>
+      <p class="hint">Q/E changes stations, A/D changes targets, 1–4 activates station controls, V opens the forward view, and X launches an escape pod. In quarters, Q/E picks Solo, Dock, or Edit Name.</p>
+    </section>
+    <section class="panel">
+      <div class="eyebrow">ESP32-3248S035C · 3.5 INCH CAPACITIVE</div>
+      <p>ST7796 display and GT911 touch. This is the image for the larger capacitive CYD.</p>
+      <dl class="specs">
+        <div><dt>Processor &amp; memory</dt><dd>ESP32-WROOM-32, 4 MB flash, 520 KB on-chip SRAM. This build does not assume PSRAM.</dd></div>
+        <div><dt>Display</dt><dd>3.5-inch color LCD, ST7796, 480 × 320 pixels in landscape; GT911 capacitive touch.</dd></div>
+        <div><dt>Sensing &amp; controls</dt><dd>Photoresistor for relative ambient light, RGB LED, BOOT button, and reset button.</dd></div>
+        <div><dt>Connections &amp; extras</dt><dd>2.4 GHz Wi-Fi, Bluetooth Classic/LE, USB, optional microSD, and audio amplifier output.</dd></div>
+      </dl>
+      <p class="hint">Pocket Fleet uses the screen, touch, onboard flash, and Wi-Fi; its RGB LED is disabled in this firmware. <a href="https://github.com/VibeProjects/ESP32-3248S035_core">3.5-inch board reference</a></p>
+      <ol class="steps">
+        <li>Connect the CYD to this computer with a USB data cable.</li>
+        <li>Open this page in desktop Chrome or Edge on <code>localhost</code> or an HTTPS site.</li>
+        <li>Choose the installer for your board, then select the CYD's serial port.</li>
+      </ol>
+      <p id="contextStatus" class="status" role="status"></p>
+      <esp-web-install-button manifest="web-flash/manifest-cyd35c.json">
+        <button slot="activate" type="button">Install on ESP32-3248S035C</button>
+        <span slot="unsupported">Use a desktop browser with Web Serial, such as Chrome or Edge.</span>
+        <span slot="not-allowed">Open this page on localhost or HTTPS to enable USB flashing.</span>
+      </esp-web-install-button>
+    </section>
+    <section class="panel">
+      <div class="eyebrow">ESP32-2432S028R · 2.8 INCH RESISTIVE</div>
+      <p>ILI9341 display and XPT2046 touch.</p>
+      <dl class="specs">
+        <div><dt>Processor &amp; memory</dt><dd>ESP32-WROOM-32, 4 MB flash, 520 KB on-chip SRAM. This build does not assume PSRAM.</dd></div>
+        <div><dt>Display</dt><dd>2.8-inch color LCD, ILI9341, 320 × 240 pixels in landscape; XPT2046 resistive touch.</dd></div>
+        <div><dt>Sensing &amp; controls</dt><dd>Photoresistor for relative ambient light, RGB LED, BOOT button, and reset button.</dd></div>
+        <div><dt>Connections &amp; extras</dt><dd>2.4 GHz Wi-Fi, Bluetooth Classic/LE, USB, optional microSD, and speaker amplifier output.</dd></div>
+      </dl>
+      <p class="hint">Pocket Fleet uses the screen, touch, onboard flash, and Wi-Fi; its RGB LED is disabled in this firmware. <a href="https://make.net.za/wp-content/datasheets/Shenzhen%20Jingcai%20Intelligent%20ESP32-2432S028R%20Product%20Spec.pdf">2.8-inch manufacturer specification</a></p>
+      <esp-web-install-button manifest="web-flash/manifest.json">
+        <button slot="activate" type="button">Install on ESP32-2432S028R</button>
+        <span slot="unsupported">Use a desktop browser with Web Serial, such as Chrome or Edge.</span>
+        <span slot="not-allowed">Open this page on localhost or HTTPS to enable USB flashing.</span>
+      </esp-web-install-button>
+      <p class="hint">A new installation may ask whether to erase existing settings. Keep them if you want to preserve the CYD's local profile. Disconnect other serial monitors before installing.</p>
+    </section>
+    <section class="panel">
+      <div class="eyebrow">FIRST START</div>
+      <p>The CYD opens your quarters first, with no Wi-Fi scan or RGB LED alerts. Choose <strong>Start Solo Ship</strong> to play locally. To find fleets later, open <strong>Dock → Connect to Wi-Fi</strong>. After joining an ordinary network, enter the IP address of the computer running <code>npm start</code> on the CYD. The browser installer does not need a firmware toolchain.</p>
+      <p class="hint">The game host still runs on a computer. The larger board currently centers the 320 × 240 game controls on its 480 × 320 display.</p>
+    </section>
+  </main>
+  <script>
+    const status=document.getElementById('contextStatus');
+    status.textContent=!window.isSecureContext?'USB flashing needs localhost or HTTPS.':!('serial' in navigator)?'This browser does not expose Web Serial. Try desktop Chrome or Edge.':'Browser USB access is available.';
+    if(window.isSecureContext&&'serial' in navigator){
+      const timeout=setTimeout(()=>status.textContent='Installer library did not load. Check this browser’s internet connection and reload.',8000);
+      customElements.whenDefined('esp-web-install-button').then(()=>{clearTimeout(timeout);status.textContent='Browser installer is ready.';});
+    }
+  </script>
+</body>
+</html>

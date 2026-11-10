@@ -1,0 +1,105 @@
+{
+  "version": 5,
+  "characters": {
+    "human": {
+      "outside_face_changes": 0,
+      "silhouette_identical": true,
+      "native_blink_and_gaze": true,
+      "native_mouths": true,
+      "mouth_anchor_xy": [
+        72,
+        85
+      ],
+      "mouth_window_xyxy": [
+        59,
+        79,
+        86,
+        94
+      ]
+    },
+    "robot": {
+      "outside_face_changes": 0,
+      "silhouette_identical": true,
+      "native_blink_and_gaze": true,
+      "native_mouths": true,
+      "mouth_anchor_xy": [
+        75,
+        86
+      ],
+      "mouth_window_xyxy": [
+        62,
+        80,
+        89,
+        95
+      ]
+    },
+    "teal_alien": {
+      "outside_face_changes": 0,
+      "silhouette_identical": true,
+      "native_blink_and_gaze": true,
+      "native_mouths": true,
+      "mouth_anchor_xy": [
+        75,
+        85
+      ],
+      "mouth_window_xyxy": [
+        62,
+        79,
+        89,
+        94
+      ]
+    },
+    "corgi": {
+      "outside_face_changes": 0,
+      "silhouette_identical": true,
+      "native_blink_and_gaze": true,
+      "native_mouths": true,
+      "mouth_anchor_xy": [
+        83,
+        87
+      ],
+      "mouth_window_xyxy": [
+        59,
+        82,
+        107,
+        96
+      ]
+    },
+    "curly_human": {
+      "outside_face_changes": 0,
+      "silhouette_identical": true,
+      "native_blink_and_gaze": true,
+      "native_mouths": true,
+      "mouth_anchor_xy": [
+        71,
+        79
+      ],
+      "mouth_window_xyxy": [
+        58,
+        73,
+        85,
+        88
+      ]
+    },
+    "lilac_alien": {
+      "outside_face_changes": 0,
+      "silhouette_identical": true,
+      "native_blink_and_gaze": true,
+      "native_mouths": true,
+      "mouth_anchor_xy": [
+        74,
+        81
+      ],
+      "mouth_window_xyxy": [
+        61,
+        75,
+        88,
+        90
+      ]
+    }
+  },
+  "shared_palette_entries": 64,
+  "defined_colors": 36,
+  "gif_background_index": 64,
+  "decoded_gif_matches_sources_pixel_for_pixel": true
+}
